@@ -1,0 +1,13 @@
+
+target/
+dbt_packages/
+logs/
+
+.env
+__pycache__/
+__init__.py
+data/
+.tfvars
+.terraform/
+terraform.
+terraform.tfvars

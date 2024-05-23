@@ -1,0 +1,28 @@
+[0m13:39:05.289452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221525F2750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002215263A550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022152639190>]}
+
+
+============================== 13:39:05.292452 | d0fe5dea-eaef-4b6f-b62c-9ed7ac6ff1ee ==============================
+[0m13:39:05.292452 [info ] [MainThread]: Running with dbt=1.8.1
+[0m13:39:05.293451 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\danie\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:39:12.313646 [debug] [MainThread]: Starter project path: C:\Users\danie\AppData\Local\pypoetry\Cache\virtualenvs\covid19-aws-pipeline-CZHFieue-py3.11\Lib\site-packages\dbt\include\starter_project
+[0m13:39:12.326118 [info ] [MainThread]: 
+Your new dbt project "covid19_aws_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:39:12.328117 [info ] [MainThread]: Setting up your profile.
+[0m13:41:46.597557 [info ] [MainThread]: Profile covid19_aws_pipeline written to C:\Users\danie\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:41:46.598559 [debug] [MainThread]: Command `dbt init` succeeded at 13:41:46.598559 after 161.36 seconds
+[0m13:41:46.599561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221525FC050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221523CBF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002214C3EFAD0>]}
+[0m13:41:46.600560 [debug] [MainThread]: Flushing usage events
