@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: athena
+    database: covid19_data_br
+    config:
+      aws_access_key_id: "{{ env_var('AWS_ACCESS_KEY') }}"
+      aws_secret_access_key: "{{ env_var('AWS_SECRET_ACCESS_KEY') }}"
+    tables:
+      - name: boletim
+      - name: caso
+      - name: caso_full
+      - name: obito_cartorio
+    

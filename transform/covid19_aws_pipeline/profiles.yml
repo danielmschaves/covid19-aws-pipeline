@@ -1,0 +1,13 @@
+covid19_aws_pipeline:
+  outputs:
+    prod:
+      type: redshift
+      host: "{{ env_var('REDSHIFT_HOST') }}"  # Redshift cluster endpoint
+      user: "{{ env_var('REDSHIFT_USER') }}"  # Redshift user
+      password: "{{ env_var('REDSHIFT_PASSWORD') }}"  # Redshift password
+      port: 5439  # Default port for Redshift
+      dbname: "{{ env_var('REDSHIFT_DBNAME') }}"  # Redshift database name
+      schema: "{{ env_var('REDSHIFT_SCHEMA') }}"  # Schema to create the tables in Redshift
+      threads: 4  # Number of threads for parallel execution
+      sslmode: require  # SSL mode for secure connection
+  target: prod
