@@ -13,7 +13,7 @@ aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
 aws_region = os.getenv('AWS_REGION')
 s3_bucket = os.getenv('S3_BUCKET_PARQUET')
 
-# List of tables in the covid19_dataset database
+# List of tables in the covid19_data_br database
 tables = [
     "boletim", "caso", "caso_full", "obito_cartorio"
 ]
@@ -39,11 +39,11 @@ class DataManager:
             table_name (str): The name of the table to query.
         """
         try:
-            sql_query = f"SELECT * FROM covid19_dataset.{table_name}"
+            sql_query = f"SELECT * FROM covid19_data_br.{table_name}"
             s3_output = f"s3://{s3_bucket}/{table_name}/"
 
             logger.info(f"Querying data from table {table_name}")
-            self.aws_manager.query_athena_to_s3(sql_query, "covid19_dataset", s3_output)
+            self.aws_manager.query_athena_to_s3(sql_query, "covid19_data_br", s3_output)
             logger.info(f"Data from table {table_name} successfully saved to {s3_output}")
 
         except Exception as e:

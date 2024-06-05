@@ -14,7 +14,7 @@ resource "aws_glue_job" "etl_job" {
   default_arguments = {
     "--job-language" = "python"
     "--TempDir" = "s3://${var.S3_BUCKET}/temp/"
-    "--extra-jars" = "s3://${var.S3_BUCKET}/libs/athena-jdbc-3.2.0-with-dependencies.jar"
+    "--extra-jars" = "s3://${var.S3_BUCKET}/libs/athena-jdbc-3.2.0-with-dependencies.jar "
     "--AWS_REGION" = var.AWS_REGION
     "--ATHENA_DATABASE" = var.ATHENA_DATABASE
     "--ATHENA_OUTPUT_BUCKET" = var.ATHENA_OUTPUT_BUCKET
